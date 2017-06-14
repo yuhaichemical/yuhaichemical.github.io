@@ -1,0 +1,41 @@
+body  {
+	background: url(../images/about_us_bg.gif) repeat-x #333333 top left;
+}
+
+#nav {
+	background: url(../images/about_us_nav_bg.gif) #333333 repeat-x left bottom;
+}
+
+#sidebar2 a {
+	float: right;
+	margin: 0 0 10px 0;
+}
+
+#sidebar2 a:link { color: #006600; text-decoration: underline; }
+#sidebar2 a:visited { color: #006600; text-decoration: underline; }
+#sidebar2 a:hover {color: #006600; text-decoration: underline; }
+
+#sidebar2 p {
+	padding: 0 10px 0 10px;
+	margin: 5px 0 10px 0;
+}
+
+#gallery{
+position: relative;
+width: 170px; /*marquee width */
+height: 400px; /*marquee height */
+overflow: hidden;
+padding-left: 25px;
+margin: 20px 0 20px 0;
+}
+
+#certification {
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+
+
+#mainContent a:link { color: #006600; text-decoration: none; }
+#mainContent a:visited { color: #006600; text-decoration: none; }
+#mainContent a:hover {color: #006600; text-decoration: underline; }

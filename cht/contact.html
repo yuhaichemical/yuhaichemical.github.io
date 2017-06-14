@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>聯繫我們 - 宇海立業化工有限公司</title>
+<meta name="keywords" content="聯繫方式,UV上光油,水性上光油,水性粘膠劑,宇海立業"/>
+<meta name="description" content="宇海立業化工有限公司誠邀各界朋友交流討論。"/>
+<link href="../css/master.css" rel="stylesheet" type="text/css" />
+<link href="../css/style_contact.css" rel="stylesheet" type="text/css" />
+<script type="application/javascript">
+function checkForm(form)
+{
+   // the variables below are assigned to each
+   // form input
+   var gname, gemail, gurl, gmessage;
+
+   gname    = form.name;
+   gemail   = form.email;
+   gurl     = form.url;
+   gmessage = form.message;
+
+   // if name is empty alert the visitor
+   if(trim(gname.value) == '')
+   {
+      alert('請輸入您的名字');
+      gname.focus();
+      return false;
+   }
+   // if email is empty alert the visitor
+   
+   if(trim(gemail.value) == '')
+   {
+      alert('請輸入您的電子郵箱');
+      gemail.focus();
+      return false;
+   }
+   // alert the visitor if email is empty or
+   // if the format is not correct
+   
+   if(trim(gemail.value) != '' && !isEmail(trim(gemail.value)))
+   {
+      alert('請輸入有效的電子郵箱');
+      gemail.focus();
+      return false;
+   }
+   // alert the visitor if message is empty
+   
+   if(trim(gmessage.value) == '')
+   {
+      alert('請輸入您的內容');
+      gmessage.focus();
+      return false;
+   }
+   
+	//fake result
+	//document.getElementById("result").innerHTML = "您的郵件已經發出，我們會儘快答覆，請耐心等候。";
+	document.getElementById("resultIframe").style.display = "";
+	// when all input are correct
+	// return true so the form will submit
+	return true;
+   
+}
+
+/*
+Strip whitespace from the beginning and end of a string
+*/
+function trim(str)
+{
+   return str.replace(/^\s+|\s+$/g,'');
+}
+
+/*
+   Check if a string is in valid email format.
+*/
+function isEmail(str)
+{
+var regex = /^([a-zA-Z0-9._-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+return regex.test(str);
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+  
+<div id="topnavcontainer">
+<ul id="topnavlist">
+
+<li><a href="../chs/contact.html">简体中文</a></li>
+<li><a href="../en/contact.html">English</a></li>
+
+</ul>
+</div>
+
+<img src="images/logo.gif" width="304" height="60" alt="宇海立業,UV上光油,水性上光油,水性粘膠劑,Logo" />
+  <!-- end #header --></div>
+
+  <div id="nav">
+  <ul>
+  	<li class="about_us"><a href="about_us.html">關於我們</a></li>
+    <li class="products"><a href="products.html">產品介紹</a></li>
+    <li class="tech_share"><a href="tech_share.html">技術探討</a></li>
+    <li class="contact"><a href="contact.html">聯繫我們</a></li>
+  </ul>
+<!-- end #nav --></div>
+
+  <div id="main">
+  
+  <div id="sidebar1">
+    <h2>國內</h2>
+    <p>廣州市宇海立業化工有限公司</p>
+    <table>
+  <tr>
+    <th width="23%" scope="row">地址:</th>
+    <td width="77%">廣東省廣州市番禺區東湧鎮太石工業區太南路</td>
+  </tr>
+  <tr>
+    <th scope="row">郵編:</th>
+    <td>511475</td>
+  </tr>
+  <tr>
+    <th scope="row">電話:</th>
+    <td>+86-20-3491-2277/3833</td>
+  </tr>
+  <tr>
+    <th scope="row">傳真:</th>
+    <td>+86-20-3491-2018</td>
+  </tr>
+  <tr>
+    <th scope="row">網站: </th>
+    <td><a href="http://www.yuhaichemical.cn">http://www.yuhaichemical.cn</a></td>
+  </tr>
+  <tr>
+    <th scope="row">郵箱:</th>
+    <td><a href="mailto:info@yuhaichem@163.com">yuhaichem@163.com</a></td>
+  </tr>
+	</table>
+  <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+<h1> 服務諮詢 </h1>
+<iframe name="resultIframe" style="display:none"></iframe>
+<table id="contactFrom">
+<form id="contactform" method="post" action="http://yuhai.0fees.net/php/PHPMailer/mail.php" target="resultIframe">
+<tr>
+<th><label for="name">姓名: *</label></th>
+<td><input type="text" name="name" size="30" maxlength="64" value=""></td>
+</tr>
+<tr>
+<th><label for="email">電子郵箱: *</label></th>
+<td><input type="text" name="email" size="30" maxlength="128" value=""></td>
+</tr>
+<tr>
+<th><label for="url">網站:</label></th>
+<td><input type="text" name="url" size="30" maxlength="192" value="http://"></td>
+</tr>
+<tr>
+<th valign="top"><label for="message">內容: *</label></th>
+<td><textarea id="message" name="message" rows="5" cols="25"></textarea></td>
+</tr>
+<tr>
+<th></th>
+<td align="right"><input type="submit" value="發送郵件" onclick="return checkForm(this.form);"/></td>
+</tr>
+<input type="hidden" name="lang" value="chs"/>
+</form> 
+</table>
+<iframe id="resultIframe" name="resultIframe" style="display: none; border: none;"></iframe>
+<div id="contactDecorate">
+<img src="../images/contact_icons.gif" alt="宇海立業提供多種聯繫方式，E-mail，電話，郵件" />
+</div>
+	<!-- end #mainContent --></div>
+    <!-- 這個用於清除浮動的元素應當緊跟 #mainContent div 之後，以便強制 #container div 包含所有的子浮動 --><br class="clearfloat" />
+   <!-- end #main --></div>
+  
+  <div id="footer">
+廣州宇海立業化工有限公司<br>
+廣東省廣州市番禺區東湧鎮太石工業區太南路<br>
++86-20-3491-2277/3833 | <a href="mailto://info@yuhaichemical.cn">info@yuhaichemical.cn</a> <br>
+<a href="#">網站地圖</a> | <a href="contact.html">聯繫我們</a><br>
+©2009 - 2010 All Rights Reserved.
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-16160629-4");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+</html>

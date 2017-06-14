@@ -1,0 +1,95 @@
+body  {
+	background: url(../images/contact_bg.gif) repeat-x #333333 top left;
+}
+
+#nav {
+	background: url(../images/contact_nav_bg.gif) #333333 repeat-x left bottom;
+}
+
+#contactFrom {
+	width: 380px;
+	border:solid 1px #999;
+	margin: 0 auto;
+}
+#contactFrom input[type="text"]{
+	width: 200px;
+}
+
+#contactFrom input[type="submit"]{
+	background: none;
+	border:  3px solid gray;
+	padding: 7px 8px 5px 8px;
+	margin-right: 15px;
+	text-align: center;
+}
+
+#contactFrom textarea{
+	width: 220px;
+	height: 150px;
+}
+
+#contactFrom td {
+	border-bottom: dashed 1px #999;
+	padding: 10px 15px 10px 0;
+} 
+
+#contactFrom label {
+	font-size: 14px;
+} 
+
+#contactFrom th {
+	border-bottom: dashed 1px #999;
+	padding: 10px 0 10px 30px;
+} 
+
+#contactDecorate {
+	width: 380px;
+	margin: 20px auto;
+}
+
+#sidebar1 {
+	width: 280px;
+}
+
+#mainContent {
+	margin-left: 330px;
+} 
+
+#mainContent h1 {
+	margin-left: 100px;
+}
+
+#mainContent table {
+	margin-top: 20px;
+}
+
+#sidebar1 table {
+	width: 100%;
+	text-align: left;
+}
+
+#sidebar1 td {
+	border-bottom: dashed 1px #999;
+	padding: 5px 5px 5px 5px;
+} 
+
+#sidebar1 th {
+	border-bottom: dashed 1px #999;
+	padding: 5px 5px 5px 5px;
+	text-align: right;
+} 
+
+#sidebar1 p {
+	text-align: center;
+	font-weight: bold;
+}
+
+#sidebar1 a:link {color: #006600}
+#sidebar1 a:visited {color: #006600}
+#sidebar1 a:hover {color: #006600}
+
+#resultIframe {
+	margin-bottom: 20px;
+	width: 640px;
+	height: 20px;
+}

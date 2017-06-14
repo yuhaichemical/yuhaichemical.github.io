@@ -1,0 +1,29 @@
+body  {
+	background: url(../images/tech_share_bg.gif) repeat-x #333333 top left;
+}
+
+#nav {
+	background: url(../images/tech_share_nav_bg.gif) #333333 repeat-x left bottom;
+}
+
+#mainContent h1 {
+	display: inline;
+}
+
+#mainContent a { margin-left: 10px; font-size: 12px;}
+#mainContent a:link { color: #00B500; text-decoration: none; }
+#mainContent a:visited { color: #00B500; text-decoration:none; }
+#mainContent a:hover {color: #00B500; text-decoration: underline; }
+
+#sidebar1 ul{ 
+margin: 10px 10px 10px 20px;
+padding: 10px;
+}
+
+#sidebar1 li{
+margin-bottom: 5px;
+}
+
+#sidebar1 a:link { color: #000000; text-decoration: none; }
+#sidebar1 a:visited { color: #000000; text-decoration:none; }
+#sidebar1 a:hover {color: #00B500; text-decoration:none; }

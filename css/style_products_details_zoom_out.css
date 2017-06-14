@@ -1,0 +1,75 @@
+body  {
+	font: 100% Verdana, 宋体, 新宋体;
+	background: #FFFFFF top left;
+	margin: 0; /* 最好将 body 元素的边距和填充设置为 0 以覆盖不同的浏览器默认值 */
+	padding: 0;
+	text-align: left; /* 在 IE 5* 浏览器中，这会将容器居中。文本随后将在 #container 选择器中设置为默认左对齐 */
+	color: #000000;
+}
+
+#category {
+	height: 154px;
+	padding: 10px 150px 0 150px;
+	text-align: justify;
+}
+
+.ironContainer {
+	background: url(../chs/products/images/head_iron_zoomout.gif) top left no-repeat #FFF;
+}
+
+.plasticContainer{
+	background: url(../chs/products/images/head_plastic_zoomout.gif) top left no-repeat #FFF;
+}
+
+#category h1 {
+	text-align: center;
+	margin: 0;
+}
+
+#productDetails {
+	margin: 30px 30px 0px 30px;
+}
+
+#productDetails h2 {
+	background: url(../images/bulletin.gif) left center no-repeat;
+	padding-left: 10px;
+	font-size: 18px;
+	margin-bottom: -10px;
+}
+#productDetails p{
+	padding-left: 10px;
+	font-size: 14px;
+}
+#productDetails ul{
+	padding: 0;
+	margin-left: 20px;
+}
+
+#productDetails li{
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+#productApp {
+	text-align:center;
+}
+
+#productApp img {
+	padding: 0;
+	border: 1px solid #333333;
+	height: 150px;
+	width: 200px;
+}
+
+/*
+#warning {
+	position: absolute;
+	bottom: 0px;
+}
+*/
+
+#warning p {
+	font-size: 12px;
+	text-align: left;
+	margin: 30px 10px 10px 10px;
+}
