@@ -51,9 +51,9 @@ $mail->Port       = 465;                   // set the SMTP port for the GMAIL se
 $mail->Username   = "yuhaiinfo@gmail.com";  // GMAIL username
 $mail->Password   = "yuhaichem";            // GMAIL password
 
-$mail->SetFrom('info@yuhaichemical.cn', '服务咨询');
+$mail->SetFrom('info@yuhaichemical.com', '服务咨询');
 
-$mail->AddReplyTo('info@yuhaichemical.cn', '服务咨询');
+$mail->AddReplyTo('info@yuhaichemical.com', '服务咨询');
 
 $mail->Subject    = "服务咨询信息 - " . $name;
 
@@ -61,7 +61,7 @@ $mail->AltBody    = "To view the message, please use an HTML compatible email vi
 
 $mail->MsgHTML($contents);
 
-$address = "info@yuhaichemical.cn";
+$address = "info@yuhaichemical.com";
 $mail->AddAddress($address, "Yu Hai Chemical");
 
 if(!$mail->Send()) {
